@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>{{GROUP_NAME}} {{GROUP_TYPE}} Group</title>
+        <title>Portable SIMD Project Group</title>
         
         <meta name="robots" content="noindex" />
         
@@ -127,14 +127,14 @@
                         
                     </div>
 
-                    <h1 class="menu-title">{{GROUP_NAME}} {{GROUP_TYPE}} Group</h1>
+                    <h1 class="menu-title">Portable SIMD Project Group</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
-                        <a href="https://github.com/rust-lang/{{GROUP_SLUG}}" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/rust-lang/portable-simd" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
@@ -165,88 +165,52 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#group_name-group_type-group" id="group_name-group_type-group">{{GROUP_NAME}} {{GROUP_TYPE}} Group</a></h1>
-<!--
- This is the template for creating project groups in rust-lang. Be sure to go
- through all sections marked with `**FIX ME**`, and make sure that the text is
- correct, and feel free to replace/remove any part that's not relevant to
- your group.
-
- All of the text across all of the initial files uses the same group of
- variables to allow for easy search and replace. They are listed below.
-
- Example sed command: `sed -i '' 's/{{GROUP_NAME}}/Inline ASM/g' ./**/*.md`
- *Note* the `-i ''` is important as it is required on some platforms e.g. macOS
-
- * {{GROUP_NAME}} -> The display name of your group e.g. "Inline ASM".
- * {{GROUP_SLUG}} -> The url slug name of your group used for
-   `rust-lang/team` and repo name. e.g. "pg-inline-asm".
- * {{CHAT_PLATFORM}} -> The name of your chat app e.g. "Zulip".
- * {{CHAT_LINK}} -> The hyperlink to your discussions on the chat app
-   e.g. "https://rust-lang.zulipchat.com/#narrow/stream/216763-project-inline-asm".
--->
-<!--
- Status badge advertising the project as being actively worked on. When the
- project has finished be sure to replace the active badge with a badge
- like: https://img.shields.io/badge/status-archived-grey.svg
--->
+                        <h1><a class="header" href="#portable-simd-project-group" id="portable-simd-project-group">Portable SIMD Project Group</a></h1>
 <p><img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="project group status: active" />
-<a href="https://rust-lang.github.io/%7B%7BGROUP_SLUG%7D%7D"><img src="https://img.shields.io/badge/MDBook-View%20Documentation-blue" alt="project group documentation" /></a></p>
-<p><strong>FIX ME</strong></p>
-<!--
- Provide a short introduction about your project group. Make sure to include any
- relevant links to information about your group.
--->
-<p>Welcome the repository for the {{GROUP_NAME}} Project Group! This is the
+<a href="https://rust-lang.github.io/portable-simd"><img src="https://img.shields.io/badge/MDBook-View%20Documentation-blue" alt="project group documentation" /></a></p>
+<p>Welcome the repository for the Portable SIMD Project Group! This is the
 repository we use to organise our work. Please refer to our <a href="./CHARTER.html">charter</a> as well
-as our <a href="https://rust-lang.github.io/%7B%7BGROUP_SLUG%7D%7D">github pages website</a> for more information on our goals and
+as our <a href="https://rust-lang.github.io/portable-simd">github pages website</a> for more information on our goals and
 current scope.</p>
-<p><strong>/FIX ME</strong></p>
 <h2><a class="header" href="#how-can-i-get-involved" id="how-can-i-get-involved">How Can I Get Involved?</a></h2>
-<p><strong>FIX ME</strong></p>
-<!--
- List ways that people from outside your group can get involved and potentially
- become members, include what meetings your team has, and how a person could
- start participating and contributing. Make sure to mention the main platform
- your group hosts its discussions. Be sure to also include links to any
- other projects that your group maintains.
--->
-<p><a href="https://github.com/rust-lang/team/blob/master/teams/%7B%7BGROUP_TYPE%7D%7D-%7B%7BGROUP_SLUG%7D%7D.toml">You can find a list of the current members available
+<p><a href="https://github.com/rust-lang/team/blob/master/teams/project-portable-simd.toml">You can find a list of the current members available
 on <code>rust-lang/team</code>.</a></p>
 <p>If you'd like to participate be sure to check out any of our <a href="/issues">open issues</a> on this
 repository.</p>
-<p>We also participate on <a href="%7B%7BCHAT_LINK%7D%7D">{{CHAT_PLATFORM}}</a>, feel free to introduce
+<p>We also participate on <a href="https://rust-lang.zulipchat.com/#narrow/stream/257879-project-portable-simd">Zulip</a>, feel free to introduce
 yourself over there and ask us any questions you have.</p>
-<p><strong>/FIX ME</strong></p>
+<p>Group meetings happen every two weeks via <a href="https://rust-lang.zulipchat.com/#narrow/stream/257879-project-portable-simd">Zulip</a>.
+You can find them on the <a href="https://calendar.google.com/calendar/u/0/embed?src=9kuu8evq4eh6uacm262k0phri8@group.calendar.google.com">Libs team calendar</a>!</p>
 <h2><a class="header" href="#building-documentation" id="building-documentation">Building Documentation</a></h2>
 <p>This repository is also an mdbook project. You can view and build it using the
 following command.</p>
 <pre><code>mdbook serve
 </code></pre>
-<h1><a class="header" href="#group_name-charter" id="group_name-charter">{{GROUP_NAME}} Charter</a></h1>
-<!--
- Provide an introduction summarising the goals and motivation behind your
- project group.
--->
+<h1><a class="header" href="#portable-simd-charter" id="portable-simd-charter">Portable SIMD Charter</a></h1>
+<p>Build and stabilize a portable SIMD API to the standard library under <code>core::simd</code> and <code>std::simd</code>.
+Draw elements from the existing portable SIMD implementations out in the ecosystem:</p>
+<ul>
+<li><a href="https://github.com/calebzulawski/generic-simd"><code>generic-simd</code></a></li>
+<li><a href="https://github.com/rust-lang/packed_simd"><code>packed_simd</code></a></li>
+<li><a href="https://github.com/Lokathor/wide"><code>wide</code></a></li>
+</ul>
 <h2><a class="header" href="#goals" id="goals">Goals</a></h2>
-<!--
- Explain what changes you'd like to see your group your group to focus on, and
- how you plan to approach these issues. Focus on explaining the highest possible
- level of your change.
--->
+<ul>
+<li>Determine the shape of the portable SIMD API.</li>
+<li>Get an unstable <code>std::simd</code> and <code>core::simd</code> API in the standard library.
+This may mean renaming <code>packed_simd</code> to <code>stdsimd</code> and working directly on it, or creating a new repository and pulling in chunks of code as needed.</li>
+<li>Produce a stabilization plan to allow portions of the API to be stabilized when they're ready, and coordinate with other unstable features.</li>
+<li>Respond to user feedback and review contributions to the API.</li>
+<li>Update <a href="https://github.com/rust-lang/rfcs/pull/2948">RFC 2948</a> based on the final API and stabilization plan.</li>
+<li>Stabilize!</li>
+</ul>
 <h2><a class="header" href="#constraints-and-considerations" id="constraints-and-considerations">Constraints And Considerations</a></h2>
-<!--
- Explain the scope of your group, what you have chosen not to include in
- your goals, and your motivations behind making them non-goals.
--->
+<p>The initial implementation will be built on LLVM intrinsics directly rather than <code>core::arch</code>.
+This is so we don't have to block the portable API on filling in a lot of missing intrinsics in <code>core::arch</code> on non-x86 platforms.</p>
 <h2><a class="header" href="#membership" id="membership">Membership</a></h2>
-<!--
- Mention your initial membership and who has decided take the roles of
- shepherd(s) and liason.
--->
-<p><strong>Shepherd:</strong>
-<strong>Team Liason:</strong>
-<strong>Members:</strong></p>
+<p><strong>Shepherds:</strong> @hsivonen, @KodrAus, @Lokathor
+<strong>Team Liason:</strong> @KodrAus
+<strong>Members:</strong> @BurntSushi, @calebzulawski, @hsivonen, @KodrAus, @Lokathor, @workingjubilee</p>
 <h1><a class="header" href="#meetings" id="meetings">Meetings</a></h1>
 <p>This folder contains the minutes of all the recorded meetings that have happened
 so far.</p>

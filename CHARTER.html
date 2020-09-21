@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Charter - {{GROUP_NAME}} {{GROUP_TYPE}} Group</title>
+        <title>Charter - Portable SIMD Project Group</title>
         
         
 
@@ -125,14 +125,14 @@
                         
                     </div>
 
-                    <h1 class="menu-title">{{GROUP_NAME}} {{GROUP_TYPE}} Group</h1>
+                    <h1 class="menu-title">Portable SIMD Project Group</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
-                        <a href="https://github.com/rust-lang/{{GROUP_SLUG}}" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/rust-lang/portable-simd" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
@@ -163,30 +163,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#group_name-charter" id="group_name-charter">{{GROUP_NAME}} Charter</a></h1>
-<!--
- Provide an introduction summarising the goals and motivation behind your
- project group.
--->
+                        <h1><a class="header" href="#portable-simd-charter" id="portable-simd-charter">Portable SIMD Charter</a></h1>
+<p>Build and stabilize a portable SIMD API to the standard library under <code>core::simd</code> and <code>std::simd</code>.
+Draw elements from the existing portable SIMD implementations out in the ecosystem:</p>
+<ul>
+<li><a href="https://github.com/calebzulawski/generic-simd"><code>generic-simd</code></a></li>
+<li><a href="https://github.com/rust-lang/packed_simd"><code>packed_simd</code></a></li>
+<li><a href="https://github.com/Lokathor/wide"><code>wide</code></a></li>
+</ul>
 <h2><a class="header" href="#goals" id="goals">Goals</a></h2>
-<!--
- Explain what changes you'd like to see your group your group to focus on, and
- how you plan to approach these issues. Focus on explaining the highest possible
- level of your change.
--->
+<ul>
+<li>Determine the shape of the portable SIMD API.</li>
+<li>Get an unstable <code>std::simd</code> and <code>core::simd</code> API in the standard library.
+This may mean renaming <code>packed_simd</code> to <code>stdsimd</code> and working directly on it, or creating a new repository and pulling in chunks of code as needed.</li>
+<li>Produce a stabilization plan to allow portions of the API to be stabilized when they're ready, and coordinate with other unstable features.</li>
+<li>Respond to user feedback and review contributions to the API.</li>
+<li>Update <a href="https://github.com/rust-lang/rfcs/pull/2948">RFC 2948</a> based on the final API and stabilization plan.</li>
+<li>Stabilize!</li>
+</ul>
 <h2><a class="header" href="#constraints-and-considerations" id="constraints-and-considerations">Constraints And Considerations</a></h2>
-<!--
- Explain the scope of your group, what you have chosen not to include in
- your goals, and your motivations behind making them non-goals.
--->
+<p>The initial implementation will be built on LLVM intrinsics directly rather than <code>core::arch</code>.
+This is so we don't have to block the portable API on filling in a lot of missing intrinsics in <code>core::arch</code> on non-x86 platforms.</p>
 <h2><a class="header" href="#membership" id="membership">Membership</a></h2>
-<!--
- Mention your initial membership and who has decided take the roles of
- shepherd(s) and liason.
--->
-<p><strong>Shepherd:</strong>
-<strong>Team Liason:</strong>
-<strong>Members:</strong></p>
+<p><strong>Shepherds:</strong> @hsivonen, @KodrAus, @Lokathor
+<strong>Team Liason:</strong> @KodrAus
+<strong>Members:</strong> @BurntSushi, @calebzulawski, @hsivonen, @KodrAus, @Lokathor, @workingjubilee</p>
 
                     </main>
 
