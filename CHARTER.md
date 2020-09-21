@@ -21,7 +21,6 @@ This may mean renaming `packed_simd` to `stdsimd` and working directly on it, or
 
 The initial implementation will be built on LLVM intrinsics directly rather than `core::arch`.
 This is so we don't have to block the portable API on filling in a lot of missing intrinsics in `core::arch` on non-x86 platforms.
-Migrating from LLVM intrinsics to `core::arch` is kept as a future possibility.
 
 ## Membership
 
