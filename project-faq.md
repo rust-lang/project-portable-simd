@@ -9,5 +9,5 @@ Most operations within `stdsimd` are simply too small to justify that cost being
 Accordingly, the `stdsimd` crate only uses compiletime feature detection.
 We suggest that you try using the [multiversion](https://docs.rs/multiversion/) crate in combination with `stdsimd` if you want to benefit from runtime feature detection.
 Because the functions and methods in `stdsimd` are marked `#[inline]`, the actual code generation is performed in the *using* crate.
-In other worse, `stdsimd` should combine with `multiversion` just as well as any other Rust code does, and correctly benefit from function multiversioning.
+In other words, `stdsimd` should combine with `multiversion` just as well as any other Rust code does, and correctly benefit from function multiversioning.
 If you do find specific examples to the contrary, please report them to our issue tracker.
