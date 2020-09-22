@@ -24,7 +24,7 @@ This is so we don't have to block the portable API on filling in a lot of missin
 
 ## Membership
 
-* **Shepherds:** @hsivonen, @KodrAus, @Lokathor
+* **Shepherds:** @calebzulawski, @Lokathor, @workingjubilee
 * **Team Liason:** @KodrAus
 * **Members:** @BurntSushi, @calebzulawski, @hsivonen, @KodrAus, @Lokathor, @workingjubilee
 
