@@ -24,9 +24,9 @@ This is so we don't have to block the portable API on filling in a lot of missin
 
 ## Membership
 
-**Shepherds:** @hsivonen, @KodrAus, @Lokathor
-**Team Liason:** @KodrAus
-**Members:** @BurntSushi, @calebzulawski, @hsivonen, @KodrAus, @Lokathor, @workingjubilee
+* **Shepherds:** @hsivonen, @KodrAus, @Lokathor
+* **Team Liason:** @KodrAus
+* **Members:** @BurntSushi, @calebzulawski, @hsivonen, @KodrAus, @Lokathor, @workingjubilee
 
 [`packed_simd`]: https://github.com/rust-lang/packed_simd
 [`wide`]: https://github.com/Lokathor/wide
