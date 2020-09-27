@@ -25,7 +25,7 @@ yourself over there and ask us any questions you have.
 Group meetings happen every two weeks via [Zulip][chat-link].
 You can find them on the [Libs team calendar][calendar]!
 
-[open issues]: /issues
+[open issues]: ../../issues
 [chat-link]: https://rust-lang.zulipchat.com/#narrow/stream/257879-project-portable-simd
 [team-toml]: https://github.com/rust-lang/team/blob/master/teams/project-portable-simd.toml
 [calendar]: https://calendar.google.com/calendar/u/0/embed?src=9kuu8evq4eh6uacm262k0phri8@group.calendar.google.com
