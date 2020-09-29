@@ -11,6 +11,10 @@ current scope.
 [charter]: ./CHARTER.md
 [gh-pages]: https://rust-lang.github.io/portable-simd
 
+## Current Status
+
+We're currently working on an initial `std::simd` implementation over in the [`stdsimd`](https://github.com/rust-lang/stdsimd) repo.
+
 ## How Can I Get Involved?
 
 [You can find a list of the current members available
