@@ -20,8 +20,7 @@ We're currently working on an initial `std::simd` implementation over in the [`s
 [You can find a list of the current members available
 on `rust-lang/team`.][team-toml]
 
-If you'd like to participate be sure to check out any of our [open issues] on this
-repository.
+The best place to start is looking at open issues in [`stdsimd`](https://github.com/rust-lang/stdsimd).
 
 We also participate on [Zulip][chat-link], feel free to introduce
 yourself over there and ask us any questions you have.
@@ -33,12 +32,3 @@ You can find them on the [Libs team calendar][calendar]!
 [chat-link]: https://rust-lang.zulipchat.com/#narrow/stream/257879-project-portable-simd
 [team-toml]: https://github.com/rust-lang/team/blob/master/teams/project-portable-simd.toml
 [calendar]: https://calendar.google.com/calendar/u/0/embed?src=9kuu8evq4eh6uacm262k0phri8@group.calendar.google.com
-
-## Building Documentation
-
-This repository is also an mdbook project. You can view and build it using the
-following command.
-
-```
-mdbook serve
-```
