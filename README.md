@@ -17,7 +17,7 @@ We're currently working on an initial `std::simd` implementation over in the [st
 [You can find a list of the current members available
 on `rust-lang/team`.][team-toml]
 
-The best place to start is looking at [open issues in stdsimd][stdsimd-issues]
+The best place to start is looking at [open issues in stdsimd][stdsimd-issues].
 
 We also participate on [Zulip][chat-link], feel free to introduce
 yourself over there and ask us any questions you have.
