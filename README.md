@@ -1,7 +1,6 @@
 # Portable SIMD Project Group
 
 ![project group status: active](https://img.shields.io/badge/status-active-brightgreen.svg)
-[![project group documentation](https://img.shields.io/badge/MDBook-View%20Documentation-blue)][gh-pages]
 
 Welcome to the repository for the Portable SIMD Project Group! This is the
 repository we use to organise our work. Please refer to our [charter] for
