@@ -11,7 +11,7 @@ more information on our goals and current scope.
 
 ## Current Status
 
-We're currently working on an initial `std::simd` implementation over in the [stdsimd][`std::simd`] repo.
+We're currently working on an initial `std::simd` implementation over in the [stdsimd] repo.
 
 ## How Can I Get Involved?
 
