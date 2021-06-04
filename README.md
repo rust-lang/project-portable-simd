@@ -22,7 +22,7 @@ The best place to start is looking at [open issues in stdsimd][stdsimd-issues].
 We also participate on [Zulip][chat-link], feel free to introduce
 yourself over there and ask us any questions you have.
 
-Group meetings happen every week via [Zulip][chat-link].
+Group meetings happen every other week via [Zulip][chat-link].
 You can find them on the [Libs team calendar][calendar]!
 
 [open issues]: ../../issues
